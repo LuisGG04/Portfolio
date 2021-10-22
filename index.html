@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/styles.css" />
+    <title>Portfolio</title>
+  </head>
+  <body class="dark">
+
+    <header class="header">
+      <div class="switches">
+        <div id="toggle-theme" class="toggle-theme">
+          <img id="toggle-icon" src="assets/icons/moon.svg" alt="moon" class="toggle-theme__icon">
+          <p id="toggle-text" class="toggle-theme__text">Dark Mode</p>
+          <!-- <img src="assets/icons/sun.svg" alt="sun" class="toggle-theme__icon">
+          <p class="toggle-theme__text">Ligth Mode</p> -->
+        </div>
+
+        <div id="toggle-colors" class="colors">
+          <div data-color="hsl(214, 84%, 56%)" class="colors__item colors__item--blue"></div>
+          <div data-color="hsl(276, 84%, 56%)" class="colors__item colors__item--purple"></div>
+          <div data-color="hsl(46, 84%, 56%)" class="colors__item colors__item--orange"></div>
+          <div data-color="hsl(150, 84%, 56%)" class="colors__item colors__item--green"></div>
+        </div>
+      </div>
+    </header>
+    
+    <main class="main">
+      <section class="column column--left">
+        <article class="card card--profile">
+          <div class="card__image-container">
+            <img src="/assets/images/image-profile.jpeg" alt="img__profile">
+          </div>
+
+          <div class="card__header">
+            <h2 class="card__title">Luis Gaitan</h2>
+            <p class="card__subtitle">Frontend Jr</p>
+          </div>
+          <div class="card__body">
+            <div class="card__link">
+              <i class='bx bx-mail-send icon__link'></i>
+              <a href="mailto:luis_uns117@outloo.es">luis_unsc117@outlook.es</a>
+            </div>
+            <div class="card__link">
+              <i class='bx bxs-phone icon__link'></i>
+              <a href="tel:5615298683">#5615298683</a>
+            </div>
+            <p class="card__text">
+              Apasionado por la tecnología, constantemente investigo, estudio e implemento las herramientas de ecosistemas como CSS, HTML y JavaScript <br>
+              <!-- Mi propósito es compartir mis diseños y proyectos en nuevas tecnologias web que sean utilizadas para aquel que lo requiera. -->
+            </p>
+          </div>
+        </article>
+      </section>
+
+      <section class="column column--right">
+        <article class="card">
+          <h2 class="card__title">Tecnologías Front End</h2>
+          <small>Experiencia</small>
+          <div class="skills__header">
+            <span class="skills__start-level">0</span>
+            <span class="skills__start-level">100</span>
+          </div>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">HTML</p>
+              <div class="skills__bar skills__bar--70"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">CSS</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">JavaScript</p>
+              <div class="skills__bar skills__bar--60"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Experiencia en</h2>
+          <small>Capacidades</small>
+          <div class="skills__header">
+            <span class="skills__start-level">0</span>
+            <span class="skills__start-level">100</span>
+          </div>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">ATC</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">Call Center</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">CSAT</p>
+              <div class="skills__bar skills__bar--80"></div>
+            </div>
+          </div>
+        </article>
+
+        <article class="card">
+          <h2 class="card__title">Últimos trabajos</h2>
+          <small>Años en la empresa</small>
+          <div class="skills__header">
+            <span class="skills__start-level">0</span>
+            <span class="skills__start-level">2</span>
+          </div>
+          <div class="skills">
+            <div class="skills__item">
+              <p class="skills__tech">Contentrix</p>
+              <div class="skills__bar skills__bar--50"></div>
+            </div>
+            <div class="skills__item">
+              <p class="skills__tech">Qualfon</p>
+              <div class="skills__bar skills__bar--90"></div>
+            </div>
+          </div>
+        </article>
+
+      </section>
+
+      <section class="column column--bottom">
+        <article class="card card__proyect">
+          <div class="proyect__text">
+            <div class="proyect__img">
+              <img src="/assets/images/html+css.png" alt="html+css" class="proyect__img">
+            </div>
+            <div class="proyect__texts">
+              <h3 class="proyect__title">Curso en HTML</h3>
+              <p class="proyect__copy">Este es un pequeño proyecto realizado con puro HTML y CSS. <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div id="proyect-prev" class="proyect__prev">
+            <a href="https://luisgg04.github.io/practica-css/" target="_blank"><img src="/assets/images/html+css-proyect.jpg" alt="proyect" class="prev__img"></a>
+          </div>
+        </article>
+
+        <article class="card card__proyect">
+          <div class="proyect__text">
+            <div class="proyect__img">
+              <img src="/assets/images/javascript.png" alt="javascript" class="proyect__img proyect__img--modifier">
+            </div>
+            <div class="proyect__texts">
+              <h3 class="proyect__title">Curso de JavaScript</h3>
+              <p class="proyect__copy">Clases realizadas para JavaScript, junto a HTML y CSS<br> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div id="proyect-prev" class="proyect__prev">
+            <a href="https://luisgg04.github.io/curso-javaScript/" target="_blank"><img src="/assets/images/curso-javascript.jpg" alt="proyect" class="prev__img"></a>
+          </div>
+        </article>
+
+        <article class="card card__proyect">
+          <div class="proyect__text">
+            <div class="proyect__img">
+              <img src="/assets/images/html+css+js.png" alt="html+css+js" class="proyect__img">
+            </div>
+            <div class="proyect__texts">
+              <h3 class="proyect__title">Proyecto responsive</h3>
+              <p class="proyect__copy">Proyecto colaborativo con efecto responsive <br> Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div>
+          </div>
+
+          <div class="proyect__prev">
+            <a href="https://luisgg04.github.io/practica-zein/" target="_blank"><img src="/assets/images/proyect-responsive.jpg" alt="proyect" class="prev__img"></a>
+          </div>
+        </article>
+      </section>
+
+    </main>
+
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
